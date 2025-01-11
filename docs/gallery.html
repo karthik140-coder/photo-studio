@@ -141,7 +141,7 @@
           </div>
           <div class="col-md-6">
             <!-- <h5 class="text-white mb-2">SUBSCRIBE TO OUR NEWSLETTER</h5> -->
-            <h5 class="text-white mb-2">DROP YOUR QUERY, WE WILL GET BACK TO YOU</h5>
+            <h5 class="text-white mb-2">DROP YOUR QUERY, WE WILL GET BACK TO YOU SOON!</h5>
             <!-- <form>
               <div class="form-floating mb-5 position-relative text-200">
                 <input class="form-control form-fotogency-header-control text-200" id="email" type="email" placeholder="name@example.com" required="required" />
@@ -152,12 +152,14 @@
               </div>
             </form> -->
             <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <textarea name="message" placeholder="Your Message"></textarea>
-                <div class="position-absolute end-0 top-0">
-                  <button class="btn shadow-none px-0" type="submit"><img class="ms-3" src="assets/img/icons/long-arrow.png" alt="" /></button>
-                </div>
+                <input class="form-control form-fotogency-header-control text-200" type="text" name="name" placeholder="Your Name" required />
+                <input class="form-control form-fotogency-header-control text-200" type="email" name="email" placeholder="Your Email" required />
+              <div class="d-flex align-items-center">
+                <textarea class="form-control form-fotogency-header-control text-200" name="message" placeholder="Your Message"></textarea>
+                <button class="btn shadow-none px-0 ms-2" type="submit">
+                  <img class="ms-3" src="assets/img/icons/long-arrow.png" alt="" />
+                </button>
+              </div>
               </form>
               <script>
                 document.getElementById("contact-form").addEventListener("submit", async (e) => {
